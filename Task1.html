@@ -1,0 +1,273 @@
+<html>
+<head>
+<!-- I used bootstrap library to be good in a lot of different screens sizes-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>Control Panel</title>
+<link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body >
+
+<div class ="row" style="background-color:#C8D7E0;"> <h3 style="text-align:center; margin: 0 auto; color:#ffffff;   font-family: Times New Roman, Times, serif;">
+<br>Deem Aldekhial<br>IoT<br>_</h3>
+</div>
+
+
+<br>
+<div class="container" ><!--background-color: gray;     <br><br><br><br><br>-->
+<div class="row ">
+ <h1 style ="text-align:center; margin: 0 auto; color:#4A92BD;">&nbsp  Control Panel</h1>
+</div>
+
+
+				<div class ="row">
+
+ <div class="col my-auto mx-auto" style="border-style: dashed;border-color:#4A92BD;  background: #E2EFF7;font-family: Lucida Console, Courier, monospace; border-right:0px;">
+
+<div class ="row">
+<button type="button" class="btn btn-outline-info btn-block" id="up" onclick="upFun()"><span class="glyphicon glyphicon-arrow-up"></span><p>Up</p></button>
+</div>
+
+<div class ="row">
+ <div class="col">
+<button type="button" class="btn btn-outline-info btn-block" id="left" onclick="leftFun()"><span class="glyphicon glyphicon-arrow-left"></span><p>Left</p></button>
+ </div>
+ <button type="button" class="btn btn-danger  btn-secondary" style="width:50%" onclick="stopFun()" id="stop"><p><br>Stop</p></button><!--btn-outline-danger-->
+
+ <div class="col">
+<button type="button" class="btn btn-outline-info btn-block" id="right" onclick="rightFun()"><span class="glyphicon glyphicon-arrow-right" id="right"></span><p>Right</p></button>
+ </div>
+</div>
+
+<div class ="row">
+<button type="button" class="btn btn-outline-info btn-block" id="down" onclick="downFun()"><span class="glyphicon glyphicon-arrow-down"></span><p>Down</p></button>
+</div>
+</div>
+
+<!---------------------------------------------------------------------------------->
+
+<div class="col my-auto mx-auto" style="border-style: dashed;border-color:#4A92BD;  background: #E2EFF7;font-family: Lucida Console, Courier, monospace;border-left:0px;">
+<table style="width:100%">
+  <tr id="A">
+    <td id="0" style="width:50px; height:30px; border:solid; background-color:#fff; border-color:#043375;"></td>
+	<td id="1" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="2" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="3" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="4" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="5" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="6" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>	
+	<td id="7" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="8" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="9" style="width:50px; height:30px; border:solid; border-color:#043375;background-color:#fff;"></td>
+	<td id="10" style="width:50px; height:30px; border:solid; border-color:#043375;background-color:#fff;"></td>
+    <td id="11" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="12" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="13" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="14" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="15" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>	
+	<td id="16" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="17" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+  </tr>
+  <tr id="B">
+    <td id="18" style="width:50px; height:30px; border:solid; background-color:#fff; border-color:#043375;"></td>
+	<td id="19" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="20" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="21" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="22" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="23" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="24" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>	
+	<td id="25" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="26" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="27" style="width:50px; height:30px; border:solid; border-color:#043375;background-color:#fff;"></td>
+	<td id="28" style="width:50px; height:30px; border:solid; border-color:#043375;background-color:#fff;"></td>
+    <td id="29" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="30" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="31" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="32" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="33" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>	
+	<td id="34" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="35" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+  </tr>
+  <tr id="C">
+    <td id="36" style="width:50px; height:30px; border:solid; background-color:#fff; border-color:#043375;"></td>
+	<td id="37" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="38" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="39" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="40" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="41" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="42" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>	
+	<td id="43" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="44" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="45" style="width:50px; height:30px; border:solid; border-color:#043375;background-color:rgb(4, 51, 117);"></td>
+	<td id="46" style="width:50px; height:30px; border:solid; border-color:#043375;background-color:#fff;"></td>
+    <td id="47" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="48" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="49" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="50" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="51" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>	
+	<td id="52" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="53" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+  </tr>
+  <tr id="D">
+    <td id="54" style="width:50px; height:30px; border:solid; background-color:#fff; border-color:#043375;"></td>
+	<td id="55" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="56" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="57" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="58" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="59" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="60" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>	
+	<td id="61" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="62" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="63" style="width:50px; height:30px; border:solid; border-color:#043375;background-color:#fff;"></td>
+	<td id="64" style="width:50px; height:30px; border:solid; border-color:#043375;background-color:#fff;"></td>
+    <td id="65" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="66" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="67" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="68" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="69" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>	
+	<td id="70" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="71" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+  </tr>
+  <tr id="4">
+    <td id="72" style="width:50px; height:30px; border:solid; background-color:#fff; border-color:#043375;"></td>
+	<td id="73" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="74" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="75" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="76" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="77" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="78" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>	
+	<td id="79" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="80" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="81" style="width:50px; height:30px; border:solid; border-color:#043375;background-color:#fff;"></td>
+	<td id="82" style="width:50px; height:30px; border:solid; border-color:#043375;background-color:#fff;"></td>
+    <td id="83" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="84" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="85" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="86" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="87" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>	
+	<td id="88" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="89" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+  </tr>
+  <tr id="E">
+    <td id="90" style="width:50px; height:30px; border:solid; background-color:#fff; border-color:#043375;"></td>
+	<td id="91" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="92" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="93" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="94" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="95" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="96" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>	
+	<td id="97" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="98" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="99" style="width:50px; height:30px; border:solid; border-color:#043375;background-color:#fff;"></td>
+	<td id="100" style="width:50px; height:30px; border:solid; border-color:#043375;background-color:#fff;"></td>
+    <td id="101" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+    <td id="102" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="103" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="104" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="105" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>	
+	<td id="106" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+	<td id="107" style="width:50px; height:30px; border:solid;border-color:#043375;background-color:#fff;"></td>
+  </tr>
+ </table>
+
+</div>
+<!---------------------------------------------------------------------------------->
+
+				</div>
+
+
+
+ </div><!-- container -->
+  <script>
+  var stop=false;
+ function stopFun(){
+stop=true;
+ }
+ </script>
+
+  <script>
+ function rightFun(){
+if (!stop) {
+for (var i = 0; i < 108; i++) {
+if (document.getElementById(i).style.getPropertyValue("background-color")=="rgb(4, 51, 117)"){
+if (i==17||i==35||i==53||i==71||i==89||i==107){
+document.getElementById(i).style="width:50px; height:30px; border:solid; background-color:rgb(255, 255, 255); border-color:#043375;";
+document.getElementById(i-17).style="width:50px; height:30px; border:solid; background-color:rgb(4, 51, 117); border-color:#043375;";
+break;
+}
+document.getElementById(i).style="width:50px; height:30px; border:solid; background-color:rgb(255, 255, 255); border-color:#043375;";
+document.getElementById(i+1).style="width:50px; height:30px; border:solid; background-color:rgb(4, 51, 117); border-color:#043375;";
+break;
+}//end if 
+}
+setTimeout(rightFun, 1000);
+}
+stop=false;
+}
+ </script>
+   <script>
+ function leftFun(){
+if (!stop) {
+for (var i = 0; i < 108; i++) {
+if (document.getElementById(i).style.getPropertyValue("background-color")=="rgb(4, 51, 117)"){
+if (i==0||i==18||i==36||i==54||i==72||i==90){
+document.getElementById(i).style="width:50px; height:30px; border:solid; background-color:rgb(255, 255, 255); border-color:#043375;";
+document.getElementById(i+17).style="width:50px; height:30px; border:solid; background-color:rgb(4, 51, 117); border-color:#043375;";
+break;
+}
+document.getElementById(i).style="width:50px; height:30px; border:solid; background-color:rgb(255, 255, 255); border-color:#043375;";
+document.getElementById(i-1).style="width:50px; height:30px; border:solid; background-color:rgb(4, 51, 117); border-color:#043375;";
+break;
+}//end if 
+}
+setTimeout(leftFun, 1000);
+}
+sttop=false;
+ }
+ </script>
+   <script>
+ function upFun(){
+ if (!stop) {
+for (var i = 0; i < 108; i++) {
+if (document.getElementById(i).style.getPropertyValue("background-color")=="rgb(4, 51, 117)"){
+if (i-18<0){
+document.getElementById(i).style="width:50px; height:30px; border:solid; background-color:rgb(255, 255, 255); border-color:#043375;";
+document.getElementById(i+90).style="width:50px; height:30px; border:solid; background-color:rgb(4, 51, 117); border-color:#043375;";
+break;
+}
+document.getElementById(i).style="width:50px; height:30px; border:solid; background-color:rgb(255, 255, 255); border-color:#043375;";
+document.getElementById(i-18).style="width:50px; height:30px; border:solid; background-color:rgb(4, 51, 117); border-color:#043375;";
+break;
+}//end if 
+}
+setTimeout(upFun, 1000);
+}
+stop=false;
+ }
+ </script>
+    <script>
+ function downFun(){
+if (!stop) {
+for (var i = 0; i < 108; i++) {
+if (document.getElementById(i).style.getPropertyValue("background-color")=="rgb(4, 51, 117)"){
+if (i+18>107){
+document.getElementById(i).style="width:50px; height:30px; border:solid; background-color:rgb(255, 255, 255); border-color:#043375;";
+document.getElementById(i-90).style="width:50px; height:30px; border:solid; background-color:rgb(4, 51, 117); border-color:#043375;";
+break;
+}document.getElementById(i).style="width:50px; height:30px; border:solid; background-color:rgb(255, 255, 255); border-color:#043375;";
+document.getElementById(i+18).style="width:50px; height:30px; border:solid; background-color:rgb(4, 51, 117); border-color:#043375;";
+break;
+}//end if 
+}
+setTimeout(downFun, 1000);
+}
+stop=false; 
+ }
+ </script>
+</body>
+</html>
