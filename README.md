@@ -1,2 +1,2 @@
-# Control-Panel---Task-1
+# Control-Panel
  Html+ CSS+ JS + bootstrap
